@@ -1,0 +1,16 @@
+launch was successful target achieved
+launch was not successful
+launch was successful target fired
+launch was successful target locked
+launch was not
+not successful launch
+apple
+grapes
+orange
+working
+worked
+works
+car
+ship
+boat
+

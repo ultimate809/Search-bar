@@ -1,0 +1,4 @@
+The sentences will be compared on the basis
+of the no of words which mean the same
+as that of the input command.
+

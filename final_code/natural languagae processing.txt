@@ -1,0 +1,35 @@
+**************************************
+1. removing the stop words
+	the words have no meaning shd be removed
+words like and ,between,or,a etc
+https://www.youtube.com/watch?v=w36-U-ccajM&list=PLQVvvaa0QuDf2JswnfiGkliBInZnIC4HL&index=2
+
+
+**************************
+2. parts of speech
+	the parts of speech of the words 
+of the sentence are recognised
+https://www.youtube.com/watch?v=6j6M2MtEqi8&index=4&list=PLQVvvaa0QuDf2JswnfiGkliBInZnIC4HL
+
+**************************
+3. stemming of words
+	words with same meaning in the sentence
+can be considered same
+since they contribute same things to the sentence
+and can analysis of the sentence can be made easier
+https://www.youtube.com/watch?v=yGKTphqxR9Q&list=PLQVvvaa0QuDf2JswnfiGkliBInZnIC4HL&index=3
+
+***************************
+
+4. chunking
+	grouping of of words with same 
+parts of speech recognised by the computer
+this creates chunks/groups of the words 
+which are needed for the analysis of the sentence
+https://www.youtube.com/watch?v=imPpT2Qo2sk&index=5&list=PLQVvvaa0QuDf2JswnfiGkliBInZnIC4HL
+***************************
+5. chinking
+	removing a group of words from 
+the whole set of selected the words
+https://www.youtube.com/watch?v=EymPQgCtcAE&list=PLQVvvaa0QuDf2JswnfiGkliBInZnIC4HL&index=6
+**************************

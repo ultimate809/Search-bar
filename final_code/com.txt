@@ -1,0 +1,105 @@
+Sophisticated aircraft, generally airliners such as the Airbus A320
+ or Boeing 737 and other turbofan powered aircraft,
+ have full performance Vertical Navigation (VNAV). 
+The purpose of VNAV is to predict and optimize the vertical path.
+ Guidance includes control of the pitch axis and control of the throttle.
+In order to have the information necessary to accomplish this,
+ the FMS must have a detailed flight and engine model.
+ With this information, the function can build a predicted vertical path 
+along the lateral flight plan. This detailed flight model is generally only available
+ from the aircraft manufacturer.
+During pre-flight, the FMS builds the vertical profile. 
+It uses the initial aircraft empty weight, fuel weight, centre of gravity
+ and initial cruise altitude, plus the lateral flight plan.
+ A vertical path starts with a climb to cruise altitude
+ Some SID waypoints have vertical constraints such as "At or ABOVE 8,000".
+ The climb may use a reduced thrust(derated) or "FLEX" climb to save stress on the engines.
+ Each must be considered in the predictions of the vertical profile.
+Implementation of an accurate VNAV is difficult and expensive,
+ but it pays off in fuel savings primarily in cruise and descent.
+In cruise, where most of the fuel is burned, 
+there are multiple methods for fuel savings.
+As an aircraft burns fuel it gets lighter and can cruise higher where
+ it is generally more efficient.
+ Step climbs or cruise climbs facilitate this. 
+VNAV can determine where the step or cruise climbs 
+ should occur to minimize fuel consumption.
+Performance optimization allows the FMS to determine 
+the best or most economical speed to fly in level flight. 
+This is often called the ECON speed. 
+This is based on the cost index, which is entered to give a weighting 
+between speed and fuel efficiency.
+ Generally a cost index of 999 gives ECON speeds as fast as possible 
+without consideration of fuel and a cost index of Zero gives maximum efficiency.
+ ECON mode is the VNAV speed used by most airliners in cruise.
+RTA or required time of arrival allows the VNAV system to target 
+arrival at a particular waypoint at a defined time. 
+This is often useful for airport arrival slot scheduling. 
+In this case, VNAV regulates the cruise speed or cost index to ensure the RTA is met.
+The first thing the VNAV calculates for the descent is the top of descent point (TOD). 
+This is the point where an efficient and comfortable descent begins.
+Normally this will involve an idle descent, but for some aircraft an
+idle descent is too steep and uncomfortable. 
+The FMS calculates the TOD by “flying” the descent backwards
+from touchdown through the approach and up to cruise.
+It does this using the flight plan, the aircraft flight model and descent winds.
+For airline FMS, this is a very sophisticated and accurate prediction,
+for simple FMS (on smaller aircraft) it can be determined by
+a “rule of thumb” such as a 3 degree descent path.
+From the TOD, the VNAV determines a four-dimensional predicted path.
+As the VNAV commands the throttles to idle, the aircraft begins its descent along the VNAV path. 
+If either the predicted path is incorrect or the downpath winds different
+from the predictions, then the aircraft will not perfectly follow the path.
+The aircraft varies the pitch in order to maintain the path. 
+Since the throttles are at idle this will modulate the speed.
+Normally the FMS allows the speed to within a small band. 
+maximum longitude is 500m
+maximum longitude is not 10m
+missile longitude height 1000m
+average longitude is 20 m
+maximum longitude is 200
+target of the destination changed
+missile are launched
+different sites of launch
+aircraft is going north
+plane taking left
+flight is named as Garuda
+maximum latitude is 500m
+maximum latitude is not 10m
+missile latitude height 1000m
+average latitude is 20 m
+maximum latitude is 200
+target of the destination changed
+missile are launched
+minimum height is 500m
+minimum height is not 10m
+missile minimum height 1000m
+average height is 20 m
+minimum range is 200
+After this, either the throttles advance  or the FMS requests speed brakes
+with a message such as “ADD DRAG” (if the aircraft is above path).
+An ideal idle descent, also known as a “green descent” uses the minimum fuel
+minimizes pollution (both at high altitude and local to the airport) and minimizes local noise. 
+While most modern FMS of large airliners are capable of idle descents
+Thus the use of idle descents is minimized by Air Traffic Control.
+maximum height is 500m
+maximum height is not 10m
+missile maximum height 1000m
+average height is 20 m
+maximum range is 200
+maximum distance is 3000m
+minimum altitude of missile 10m
+max distance of rocket is high
+max distance of rocket is fail
+altitude of the destination is 100.
+altitude of the place is 890.
+aircraft crashed 20E 6' 7''
+target set 
+ready to launch
+wings not working
+fuel tank leaked 
+speed of plane
+plane ready for emergency landing
+plane take off
+missile developed in the year 2017
+
